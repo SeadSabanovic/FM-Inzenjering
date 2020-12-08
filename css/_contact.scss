@@ -1,0 +1,210 @@
+.contact-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 20px;
+
+    #success {
+      font-size: 2rem !important;
+      color: #146C9C;
+    }
+
+    small {
+      font-size: 1rem;
+      color: #9A3229;
+    }
+
+    .msg {
+      margin: 20px 0;
+      color: #9A3229;
+    }
+
+    button {
+      @include buttonRed;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 1.5rem;
+      padding: 20px;
+      margin-bottom: 3rem;
+    }
+
+    .input-group {
+      flex: 1;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &.text {
+        h5 {
+          position: absolute;
+          bottom: 6px;
+          left: 40px;
+          font-size: .8rem;
+          color: #9A3229;
+        }
+      }
+
+      .input-line {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+        &:nth-child(2) {
+          margin-left: 20px;
+        }
+
+        h5 {
+          position: absolute;
+          bottom: -10px;
+          left: 40px;
+          font-size: .8rem;
+          color: #9A3229;
+        }
+
+        i {
+          position: absolute;
+          top: -2px;
+          right: -2px;
+          color: #444;
+          font-size: .7rem;
+        }
+        
+        input {
+          width: 100%;
+          border-bottom: 1px solid transparent;
+          transition: all .2s ease;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          background: none;
+          color: #444;
+
+          &.invalid {
+            border-bottom: 1px solid #9A3229;
+          }
+
+          &.valid {
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    textarea {
+      color: #444;
+      background: none;
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 10px 20px;
+      border: none;
+      border-bottom: 1px solid transparent;
+      transition: all .2s ease;
+      outline: none;
+      margin: 2rem 0 2rem;
+      border-radius: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+      resize: none;
+      min-height: 160px;
+
+      &.invalid {
+        border-bottom: 1px solid #9A3229;
+      }
+
+      &.valid {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+
+  .map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 20px 3rem;
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contact-content {
+    padding: 6rem 20px 0;
+
+    #title1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+  }
+
+  .cards {
+    padding: 3rem 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+      align-self: stretch;
+      min-width: 270px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      svg {
+        width: 130px;
+        height: 130px;
+      }
+
+      small {
+        margin-top: 2rem;
+        font-size: 1rem;
+        @include bold;
+        color: #333;
+      }
+    }
+  }
+}

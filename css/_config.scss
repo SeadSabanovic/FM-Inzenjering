@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700');
+
+@mixin bold {
+  font-weight: 700;
+}
+@mixin normal {
+  font-weight: 400;
+}
+@mixin buttonRed {
+  padding: 10px 20px;
+  margin: 30px 0;
+  text-decoration: none;
+  outline: none;
+  color: #9A3229;
+  border: 2px solid #9A3229;
+  outline: none;
+  background: none;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    background: #9A3229;
+    color: #f4f4f4;
+  }
+}
+@mixin buttonWhite {
+  padding: 10px 20px;
+  margin: 30px 0;
+  text-decoration: none;
+  outline: none;
+  background: none;
+  color: #f4f4f4;
+  border: 2px solid #f4f4f4;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    background: #f4f4f4;
+    color: #333;
+  }
+}
+@mixin buttonBlue {
+  padding: 10px 20px;
+  margin: 30px 0;
+  text-decoration: none;
+  border: 2px solid #146C9C;
+  outline: none;
+  background: none;
+  color: #146C9C;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    background: #146C9C;
+    color: #f4f4f4;
+  }
+}
+
+$blue: '#146C9C';
+
